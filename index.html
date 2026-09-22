@@ -51,14 +51,10 @@
   .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
   .brand img { height: 34px; width: 34px; object-fit: contain; }
   .brand span { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1em; color: var(--ink); }
-  nav ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; }
+  nav ul { list-style: none; display: flex; gap: 28px; margin: 0; padding: 0; }
   nav a { text-decoration: none; color: var(--slate); font-size: 0.95em; font-weight: 500; }
   nav a:hover { color: var(--navy-800); }
-  @media (max-width: 760px) {
-    .nav-row { align-items: flex-start; flex-direction: column; gap: 12px; }
-    nav ul { gap: 10px 18px; flex-wrap: wrap; }
-    nav a { font-size: 0.85em; }
-  }
+  @media (max-width: 640px) { nav ul { gap: 16px; } nav a { font-size: 0.85em; } }
 
   /* Hero */
   .hero {
@@ -221,17 +217,15 @@
 <header>
   <div class="nav-row">
     <a class="brand" href="#top">
-      <img src="logo.png" alt="Grip Dispatch logo">
+      <img src="grip-dispatch-logo.png" alt="Grip Dispatch logo">
       <span>GripDispatch</span>
     </a>
     <nav>
       <ul>
         <li><a href="#services">Services</a></li>
         <li><a href="#how-it-works">SMS &amp; Consent</a></li>
-        <li><a href="verbal-sms-consent.html">Verbal SMS Consent</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="sms-terms.html">Terms &amp; Conditions</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#legal">Legal</a></li>
       </ul>
     </nav>
   </div>
@@ -281,7 +275,7 @@
       </div>
       <div class="service-row">
         <h3>Pre-purchase inspections</h3>
-        <p>An independent mechanical check before you buy a used vehicle.</p>
+        <p>A independent mechanical check before you buy a used vehicle.</p>
       </div>
     </div>
   </div>
@@ -290,44 +284,44 @@
 <section class="how" id="how-it-works">
   <div class="wrap">
     <p class="kicker" style="color:#7fa3b3;">How we work with you</p>
-    <h2>SMS consent comes first — every time</h2>
-    <p class="section-intro">We do not send service-related text messages until the customer or driver has expressly agreed to receive them. Here is how consent and communication are handled.</p>
+    <h2>You contact us first — every time</h2>
+    <p class="section-intro">We never reach out to you before you've contacted us about a specific job. Here's exactly how a request and its communication is handled.</p>
     <div class="steps">
       <div class="step">
         <div class="mark">1</div>
         <div>
-          <h3>A service need is identified</h3>
-          <p>A customer requests service, or a driver needs service-related dispatch communication.</p>
+          <h3>You reach out</h3>
+          <p>You contact Grip Dispatch by phone or text to request mobile mechanic service.</p>
         </div>
       </div>
       <div class="step">
         <div class="mark">2</div>
         <div>
-          <h3>We ask for permission</h3>
-          <p>Before sending texts, a Grip Dispatch representative explains the SMS program and asks for explicit verbal consent at the mobile number provided.</p>
+          <h3>You choose how we follow up</h3>
+          <p>For that specific job, we ask whether you'd like updates by phone call or text message. Your choice applies to that job only.</p>
         </div>
       </div>
       <div class="step">
         <div class="mark">3</div>
         <div>
           <h3>We coordinate the work</h3>
-          <p>Texts are limited to requested-service communications such as load, driver-status, delivery, appointment, account, and other service updates — not marketing.</p>
+          <p>All texts relate to confirming your appointment, mechanic ETA, and job status — nothing else.</p>
         </div>
       </div>
       <div class="step">
         <div class="mark">4</div>
         <div>
-          <h3>You stay in control</h3>
-          <p>You can revoke consent at any time by replying STOP or by contacting Grip Dispatch customer support.</p>
+          <h3>No unsolicited follow-up</h3>
+          <p>Once the job is done, we don't text you again unless you reach out for future work.</p>
         </div>
       </div>
     </div>
 
     <div class="consent-box">
       <h3>SMS consent, in plain terms</h3>
-      <p>Text messaging is opt-in and limited to service-related communication — never marketing. Message and data rates may apply, and message frequency varies with your service activity.</p>
-      <p>Reply <code>STOP</code> at any time to opt out of SMS, or <code>HELP</code> for assistance. You can also contact customer support to ask us to stop.</p>
-      <p>Full details are in our <a href="verbal-sms-consent.html" style="color:var(--cyan-200);">Verbal SMS Consent Script</a>, <a href="sms-terms.html" style="color:var(--cyan-200);">SMS Terms &amp; Conditions</a>, and <a href="privacy-policy.html" style="color:var(--cyan-200);">Privacy Policy</a>.</p>
+      <p>Text messaging is opt-in and tied to a specific job — never blanket or ongoing. Message and data rates may apply, and message frequency varies with your service activity.</p>
+      <p>Reply <code>STOP</code> at any time to opt out of SMS, or <code>HELP</code> for assistance. You can also manage SMS preferences in your account.</p>
+      <p>Full details: <a href="sms-terms.html" style="color:var(--cyan-200);">SMS Terms &amp; Conditions</a> &nbsp;|&nbsp; <a href="privacy-policy.html" style="color:var(--cyan-200);">Privacy Policy</a></p>
     </div>
   </div>
 </section>
@@ -344,7 +338,7 @@
         </div>
         <div class="contact-item">
           <div class="label">Email</div>
-          <div class="value"><a href="mailto:admin@gripdispatch.com">admin@gripdispatch.com</a></div>
+          <div class="value"><a href="mailto:gripdispatch@gmail.com">gripdispatch@gmail.com</a></div>
         </div>
         <div class="contact-item">
           <div class="label">Hours</div>
@@ -365,18 +359,17 @@
   <div class="wrap">
     <div class="footer-row">
       <div class="footer-brand">
-        <img src="logo.png" alt="Grip Dispatch logo">
+        <img src="grip-dispatch-logo.png" alt="Grip Dispatch logo">
         <span>GripDispatch</span>
       </div>
       <div class="footer-links">
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="sms-terms.html">SMS Terms &amp; Conditions</a>
-        <a href="verbal-sms-consent.html">Verbal SMS Consent Script</a>
-        <a href="mailto:admin@gripdispatch.com">Email us</a>
+        <a href="mailto:gripdispatch@gmail.com">Email us</a>
         <a href="tel:+18885572702">Call us</a>
       </div>
     </div>
-    <p class="fine">&copy; 2026 Grip Dispatch and its family of regional service brands. All rights reserved. Mobile mechanic services are performed by independent dispatched contractors coordinated through the Grip Dispatch platform.</p>
+    <p class="fine">&copy; 2026 Grip Dispatch. All rights reserved. Mobile mechanic services are performed by independent dispatched contractors coordinated through the Grip Dispatch platform.</p>
   </div>
 </footer>
 
