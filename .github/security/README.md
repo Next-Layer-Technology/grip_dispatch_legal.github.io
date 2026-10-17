@@ -47,3 +47,16 @@ repositories on the current plan report protection/ruleset restrictions.
 Keep existing deployment gates and other security/secret/test checks. A reusable
 legacy malware gate can call the standardized workflow without duplicate PR
 triggers. Application/deployment workflows remain subject to the incident hold.
+
+## Public repository enforcement bootstrap
+
+GitHub Pages is configured to publish only the default branch. This branch's
+additional documentation commit intentionally permits the scanner-only push
+workflow, without dispatching Pages or executing application code. That push
+checks the exact proposed commit on the dedicated EWS scanner.
+
+Manual-dispatch checks verify runner execution but do not satisfy GitHub's
+required PR checks. A required-check rule must use an eligible event and the
+GitHub Actions check identity. The first trusted PR event remains unverified
+until the reviewed workflow reaches the base branch. This rollout does not
+merge the policy or release the incident hold.
